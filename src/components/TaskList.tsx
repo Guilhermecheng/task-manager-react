@@ -14,8 +14,6 @@ export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
   
-  const [taskComplete, setTaskComplete] = useState(false);
-
   const inputRef = createRef<HTMLInputElement>();
 
   function handleCreateNewTask() {
