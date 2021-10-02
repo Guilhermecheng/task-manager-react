@@ -49,7 +49,7 @@ export function TaskList() {
   function handleRemoveTask(id: number) {
     // Remova uma task da listagem pelo ID
     tasks.splice(id - 1, 1);
-    // tasks.forEach((task, i) => {task.id = i + 1});
+    tasks.forEach((task, i) => {task.id = i + 1});
     setTasks([...tasks]);
   }
 
